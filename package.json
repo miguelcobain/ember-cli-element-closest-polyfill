@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-element-closest-polyfill",
   "version": "0.0.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember cli addon that includes a polyfill for closest() if needed.",
   "keywords": [
     "ember-addon",
     "closest",
