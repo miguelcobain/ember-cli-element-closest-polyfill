@@ -31,6 +31,10 @@ This should also work as a nested addon of another addon, just include it as a `
 makes use of `closest()`, you can use this to make sure the API is available. Given the above mentioned targets feature,
 it will have no negative impact on the consuming app should the polyfill not be needed.
 
+## Credits
+
+This addon was inspired by a similar polyfill addon: https://github.com/kaliber5/ember-cli-classlist-polyfill
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE.md).
