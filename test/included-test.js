@@ -14,11 +14,11 @@ describe('Include polyfill', function() {
   before(async function() {
     app = new AddonTestApp();
     await app.create('included');
-    await app.startServer({ command: 'serve' });
+    await app.startServer();
   });
 
-  after(async function() {
-    await app.stopServer();
+  after(function() {
+    return app.stopServer();
   });
 
   it('includes polyfill for IE', async function() {

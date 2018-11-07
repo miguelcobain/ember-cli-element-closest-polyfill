@@ -14,11 +14,11 @@ describe('Exclude polyfill', function() {
   before(async function() {
     app = new AddonTestApp();
     await app.create('excluded');
-    await app.startServer({ command: 'serve' });
+    await app.startServer();
   });
 
-  after(async function() {
-    await app.stopServer();
+  after(function() {
+    return app.stopServer();
   });
 
   it('skips polyfill for modern browsers', async function() {
