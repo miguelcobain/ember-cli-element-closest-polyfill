@@ -4,11 +4,14 @@
 [![Ember Observer Score](https://emberobserver.com/badges/ember-cli-element-closest-polyfill.svg)](https://emberobserver.com/addons/ember-cli-element-closest-polyfill)
 [![npm version](https://badge.fury.io/js/ember-cli-element-closest-polyfill.svg)](https://badge.fury.io/js/ember-cli-element-closest-polyfill)
 
-Ember-CLI addon to add a polyfill for the [Element.closest()](https://developer.mozilla.org/en/docs/Web/API/Element/closest)
+Ember-CLI addon to add a polyfill for the [`Element.closest()`](https://developer.mozilla.org/en/docs/Web/API/Element/closest)
 property, based on [element-closest](https://github.com/jonathantneal/closest).
 
 Internet Explorer 11 and lower do not support `closest()`. 
 See full [browser support details](https://caniuse.com/#feat=element-closest).
+
+The included polyfill also polyfills [`#Element.matches`](https://developer.mozilla.org/en/docs/Web/API/Element/matches), which is
+widely supported but often vendor-prefixed.
 
 ## Installation
 
