@@ -57,7 +57,7 @@
     "loader.js": "^4.7.0",
     "mocha": "^5.2.0",
     "node-fetch": "^2.2.1",
-    "qunit-dom": "^0.8.0"
+    "qunit-dom": "^0.8.4"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
