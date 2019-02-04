@@ -30,7 +30,7 @@ polyfill will *not* be included into your build, to not increase your bundle siz
 
 ### Usage in an addon
 
-This should also work as a nested addon of another addon, just include it as a `dependency`. So if you addon
+This should also work as a nested addon of another addon, just include it as a `dependency`. So if your addon
 makes use of `closest()`, you can use this to make sure the API is available. Given the above mentioned targets feature,
 it will have no negative impact on the consuming app should the polyfill not be needed.
 
