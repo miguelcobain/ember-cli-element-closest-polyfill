@@ -19,7 +19,7 @@ module.exports = {
 
   included() {
     if (this.shouldImportPolyfill()) {
-      this._import('vendor/element-closest/element-closest.js');
+      this._import('vendor/element-closest/browser.js');
     }
   },
 

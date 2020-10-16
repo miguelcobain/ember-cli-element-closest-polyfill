@@ -6,6 +6,8 @@ const expect = chai.expect;
 const AddonTestApp = require('ember-cli-addon-tests').AddonTestApp;
 const fetch = require('node-fetch');
 
+const POLYFILL_CONTENT = require('./polyfill-content');
+
 describe('Exclude polyfill', function() {
   this.timeout(400000);
 
@@ -24,6 +26,6 @@ describe('Exclude polyfill', function() {
   it('skips polyfill for modern browsers', async function() {
     let response = await fetch('http://localhost:49741/assets/vendor.js');
     let body = await response.text();
-    expect(body).to.not.contain('element-closest.js');
+    expect(body).to.not.contain(POLYFILL_CONTENT);
   });
 });

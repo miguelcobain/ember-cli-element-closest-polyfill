@@ -6,6 +6,8 @@ const expect = chai.expect;
 const AddonTestApp = require('ember-cli-addon-tests').AddonTestApp;
 const fetch = require('node-fetch');
 
+const POLYFILL_CONTENT = require('./polyfill-content');
+
 describe('Include polyfill', function() {
   this.timeout(400000);
 
@@ -24,6 +26,6 @@ describe('Include polyfill', function() {
   it('includes polyfill for IE', async function() {
     let response = await fetch('http://localhost:49741/assets/vendor.js');
     let body = await response.text();
-    expect(body).to.contain('element-closest');
+    expect(body).to.contain(POLYFILL_CONTENT);
   });
 });
